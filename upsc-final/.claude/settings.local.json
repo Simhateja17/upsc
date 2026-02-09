@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(copy \"C:\\\\Users\\\\suria\\\\Downloads\\\\Ellipse 34.png\" \"C:\\\\Users\\\\suria\\\\OneDrive\\\\Desktop\\\\upsc-final\\\\public\\\\testimonial-avatar-1.png\")",
+      "Bash(cmd /c copy \"C:\\\\Users\\\\suria\\\\Downloads\\\\Ellipse 34.png\" \"C:\\\\Users\\\\suria\\\\OneDrive\\\\Desktop\\\\upsc-final\\\\public\\\\testimonial-avatar-1.png\")",
+      "Bash(cmd /c copy:*)",
+      "Bash(cmd /c dir:*)",
+      "Bash(powershell:*)",
+      "Bash(npm run dev:*)"
+    ]
+  }
+}
