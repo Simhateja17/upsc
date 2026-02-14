@@ -31,10 +31,7 @@ const FAQ = () => {
 
   return (
     <section 
-      className="relative w-full overflow-hidden flex justify-center py-20"
-      style={{
-        background: '#FFFFFF',
-      }}
+      className="relative w-full overflow-hidden flex justify-center py-20 bg-white"
     >
       {/* Content Container - 1920px width reference */}
       <div className="relative z-10 w-[1920px] shrink-0 transform scale-[0.4] sm:scale-[0.5] md:scale-[0.6] lg:scale-[0.8] xl:scale-100 origin-top">
@@ -42,19 +39,11 @@ const FAQ = () => {
         {/* Title Container */}
         <div 
           className="flex items-center justify-center mx-auto mb-12"
-          style={{
-            width: '967px',
-            height: '91px',
-          }}
+          style={{ width: '967px', height: '91px' }}
         >
           <h2 
-            className="font-lora font-semibold text-center p-0 m-0"
-            style={{
-              fontSize: '70px',
-              lineHeight: '150%',
-              letterSpacing: '0.01em',
-              color: '#1C2E45',
-            }}
+            className="font-lora font-semibold text-center p-0 m-0 text-[#1C2E45]"
+            style={{ fontSize: '70px', lineHeight: '150%', letterSpacing: '0.01em' }}
           >
             Frequently Asked Questions
           </h2>
@@ -63,33 +52,22 @@ const FAQ = () => {
         {/* FAQ Items */}
         <div 
           className="flex flex-col gap-0 mx-auto"
-          style={{
-            width: '1347px',
-          }}
+          style={{ width: '1347px' }}
         >
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="relative cursor-pointer transition-all duration-300"
+              className="relative cursor-pointer transition-all duration-300 bg-white border border-[#E8E8E8] rounded-[10px] mb-[10px]"
               style={{
-                background: '#FFFFFF',
-                border: '1px solid #E8E8E8',
-                borderRadius: '10px',
                 padding: openIndex === index ? '32px 41px' : '28px 41px',
-                marginBottom: '10px',
-                boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.04)',
+                boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.04)'
               }}
               onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
             >
               <div className="flex items-center justify-between">
                 <h3 
-                  className="font-manrope font-extrabold"
-                  style={{
-                    fontSize: '22px',
-                    lineHeight: '22px',
-                    letterSpacing: '0',
-                    color: '#000000',
-                  }}
+                  className="font-manrope font-extrabold text-black"
+                  style={{ fontSize: '22px', lineHeight: '22px', letterSpacing: '0' }}
                 >
                   {faq.question}
                 </h3>

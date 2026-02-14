@@ -11,7 +11,14 @@ const filesToCopy = [
   { src: 'Icon.png', dest: 'icon-flashcards.png' },
   { src: 'list-fail.png', dest: 'icon-wrong-attempts.png' },
   { src: 'tree-list.png', dest: 'icon-mindmaps.png' },
-  { src: 'newspaper-folding.png', dest: 'icon-quick-notes.png' }
+  { src: 'newspaper-folding.png', dest: 'icon-quick-notes.png' },
+  { src: 'image-removebg-preview (22) 1.png', dest: 'image-removebg-preview (22) 1.png' },
+  { src: 'image-removebg-preview (59) 1.png', dest: 'image-removebg-preview (59) 1.png' },
+  { src: 'image-removebg-preview (65) 1.png', dest: 'image-removebg-preview (65) 1.png' },
+  { src: 'image-removebg-preview (68) 1.png', dest: 'image-removebg-preview (68) 1.png' },
+  { src: 'image-removebg-preview (71) 1.png', dest: 'image-removebg-preview (71) 1.png' },
+  { src: 'tag-one.png', dest: 'tag-one.png' },
+  { src: '📚.png', dest: '📚.png' }
 ];
 
 console.log('Copying images to public folder...\n');

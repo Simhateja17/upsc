@@ -1,4 +1,7 @@
+'use client';
+
 import React from 'react';
+import Link from 'next/link';
 
 const ResponsiveDashboardContent = () => {
   return (
@@ -135,9 +138,7 @@ const ResponsiveDashboardContent = () => {
         {/* Today's Trio Section */}
         <div className="mb-[clamp(2rem,2.5vw,3rem)]">
           <div className="flex items-center gap-2 mb-[clamp(1rem,1.25vw,1.5rem)]">
-            <svg className="w-[clamp(18px,1.25vw,22px)] h-[clamp(18px,1.25vw,22px)] text-red-500" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
-            </svg>
+            <img src="/image-removebg-preview (46) 1.png" alt="Today's Trio" className="w-[clamp(18px,1.25vw,22px)] h-[clamp(18px,1.25vw,22px)]" />
             <h2 className="font-inter font-bold text-[clamp(18px,1.2vw,20px)] text-[#1A1A1A]">
               Today's Trio
             </h2>
@@ -145,15 +146,17 @@ const ResponsiveDashboardContent = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-[clamp(1rem,1.25vw,1.5rem)]">
             {/* Daily MCQ Card */}
-            <div className="bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative">
+            <Link
+              href="/dashboard/daily-mcq"
+              aria-label="Open Daily MCQ"
+              className="block bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative cursor-pointer h-full flex flex-col"
+            >
               <div className="absolute top-3 right-3 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+                <img src="/image-removebg-preview (48) 1.png" alt="Completed" className="w-4 h-4" />
               </div>
               
               <div className="flex items-center gap-2 mb-3">
-                <img src="/paper-write--Streamline-Ultimate.png" alt="MCQ" className="w-5 h-5" />
+                <img src="/Text.png" alt="MCQ" className="w-5 h-5" />
                 <h3 className="font-inter font-semibold text-[clamp(15px,0.94vw,16px)] text-[#1A1A1A]">
                   Daily MCQ
                 </h3>
@@ -162,22 +165,20 @@ const ResponsiveDashboardContent = () => {
               <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-gray-600 mb-1">
                 <span className="font-medium text-green-600">Status: Completed</span>
               </p>
-              <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-[#1A1A1A] font-medium mb-4">
+              <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-[#1A1A1A] font-medium mb-4 flex-grow">
                 5 Questions - Policy & Economy
               </p>
 
-              <button className="w-full bg-[#17223E] text-white rounded-lg py-2 px-4 font-inter font-medium text-[clamp(13px,0.73vw,14px)] hover:bg-[#1E2875] transition-colors flex items-center justify-center gap-2">
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none">
-                  <path d="M5 13l4 4L19 7" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+              <div className="w-full bg-[#17223E] text-white rounded-lg py-2 px-4 font-inter font-medium text-[clamp(13px,0.73vw,14px)] hover:bg-[#1E2875] transition-colors flex items-center justify-center gap-2" role="button">
+                <img src="/image-removebg-preview (48) 1.png" alt="Completed" className="w-4 h-4" />
                 Completed
-              </button>
-            </div>
+              </div>
+            </Link>
 
             {/* Daily Editorial Card */}
-            <div className="bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
               <div className="flex items-center gap-2 mb-3">
-                <img src="/newspaper-folding.png" alt="Editorial" className="w-5 h-5" />
+                <img src="/image-removebg-preview (31) 1.png" alt="Editorial" className="w-5 h-5" />
                 <h3 className="font-inter font-semibold text-[clamp(15px,0.94vw,16px)] text-[#1A1A1A]">
                   Daily Editorial
                 </h3>
@@ -186,23 +187,24 @@ const ResponsiveDashboardContent = () => {
               <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-gray-600 mb-1">
                 <span className="font-medium">Status: Pending</span>
               </p>
-              <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-[#1A1A1A] font-medium mb-4">
+              <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-[#1A1A1A] font-medium mb-4 flex-grow">
                 India-US Trade Relations
               </p>
 
-              <button className="w-full bg-[#17223E] text-white rounded-lg py-2 px-4 font-inter font-medium text-[clamp(13px,0.73vw,14px)] hover:bg-[#1E2875] transition-colors">
+              <button className="w-full bg-[#17223E] text-white rounded-lg py-2 px-4 font-inter font-medium text-[clamp(13px,0.73vw,14px)] hover:bg-[#1E2875] transition-colors flex items-center justify-center gap-2">
+                <img src="/TrioCard.png" alt="Read" className="w-4 h-4" />
                 Read Now
               </button>
             </div>
 
             {/* Mains Question Card */}
-            <div className="bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative">
+            <div className="bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative h-full flex flex-col">
               <div className="absolute top-3 right-3 px-2 py-1 bg-teal-50 text-teal-600 rounded text-[clamp(11px,0.63vw,12px)] font-medium">
                 AI Evaluation
               </div>
               
               <div className="flex items-center gap-2 mb-3">
-                <img src="/icon-mains.png" alt="Mains" className="w-5 h-5" />
+                <img src="/image-removebg-preview (31) 1.png" alt="Mains" className="w-5 h-5" />
                 <h3 className="font-inter font-semibold text-[clamp(15px,0.94vw,16px)] text-[#1A1A1A]">
                   Mains Question
                 </h3>
@@ -211,11 +213,12 @@ const ResponsiveDashboardContent = () => {
               <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-gray-600 mb-1">
                 <span className="font-medium">Status: Pending</span>
               </p>
-              <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-[#1A1A1A] font-medium mb-4">
+              <p className="font-inter text-[clamp(13px,0.73vw,14px)] text-[#1A1A1A] font-medium mb-4 flex-grow">
                 Local Self Governance
               </p>
 
-              <button className="w-full bg-[#17223E] text-white rounded-lg py-2 px-4 font-inter font-medium text-[clamp(13px,0.73vw,14px)] hover:bg-[#1E2875] transition-colors">
+              <button className="w-full bg-[#17223E] text-white rounded-lg py-2 px-4 font-inter font-medium text-[clamp(13px,0.73vw,14px)] hover:bg-[#1E2875] transition-colors flex items-center justify-center gap-2">
+                <img src="/TrioCard (1).png" alt="Attempt" className="w-4 h-4" />
                 Attempt Now
               </button>
             </div>
@@ -226,31 +229,20 @@ const ResponsiveDashboardContent = () => {
         <div className="mb-[clamp(2rem,2.5vw,3rem)]">
           <div className="flex items-center justify-between mb-[clamp(1rem,1.25vw,1.5rem)]">
             <div className="flex items-center gap-2">
-              <svg className="w-[clamp(18px,1.25vw,22px)] h-[clamp(18px,1.25vw,22px)] text-red-500" viewBox="0 0 24 24" fill="none">
-                <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" strokeWidth="2"/>
-                <path d="M8 3v4M16 3v4M3 11h18" stroke="currentColor" strokeWidth="2"/>
-                <text x="12" y="17" fontSize="8" fill="currentColor" textAnchor="middle" fontWeight="bold">17</text>
-              </svg>
+              <img src="/image-removebg-preview (5) 1.png" alt="Today's Study Tasks" className="w-[clamp(18px,1.25vw,22px)] h-[clamp(18px,1.25vw,22px)]" />
               <h2 className="font-inter font-bold text-[clamp(18px,1.2vw,20px)] text-[#1A1A1A]">
                 Today's Study Tasks
               </h2>
             </div>
-            <div className="flex items-center gap-2">
-              <button className="p-1 hover:bg-gray-100 rounded transition-colors">
-                <svg className="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
-                  <path d="M15 18l-6-6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
+            <div className="flex items-center gap-3">
+              <button className="w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors flex items-center justify-center">
+                <img src="/arrow-right.png" alt="Previous" className="w-4 h-4 opacity-60" />
               </button>
-              <span className="font-inter text-[clamp(13px,0.73vw,14px)] text-gray-600 font-medium">
-                Today
+              <span className="font-inter text-[clamp(13px,0.73vw,14px)] text-gray-400 px-4">
+                Today • Wed, Mar 19
               </span>
-              <span className="font-inter text-[clamp(13px,0.73vw,14px)] text-gray-400">
-                Wed, Mar 19
-              </span>
-              <button className="p-1 hover:bg-gray-100 rounded transition-colors">
-                <svg className="w-5 h-5 text-gray-400" viewBox="0 0 24 24" fill="none">
-                  <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                </svg>
+              <button className="w-8 h-8 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors flex items-center justify-center">
+                <img src="/arrow-right.png" alt="Next" className="w-4 h-4 transform rotate-180 opacity-60" />
               </button>
             </div>
           </div>
@@ -263,9 +255,7 @@ const ResponsiveDashboardContent = () => {
               </h3>
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[clamp(12px,0.68vw,13px)] font-medium">
-                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" strokeWidth="2"/>
-                  </svg>
+                  <img src="/Clip path group.png" alt="Reading" className="w-3.5 h-3.5" />
                   Reading
                 </span>
                 <span className="inline-flex items-center gap-1 text-gray-600 text-[clamp(12px,0.68vw,13px)]">
@@ -295,9 +285,7 @@ const ResponsiveDashboardContent = () => {
               </h3>
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[clamp(12px,0.68vw,13px)] font-medium">
-                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" strokeWidth="2"/>
-                  </svg>
+                  <img src="/Clip path group.png" alt="Reading" className="w-3.5 h-3.5" />
                   Reading
                 </span>
                 <span className="inline-flex items-center gap-1 text-gray-600 text-[clamp(12px,0.68vw,13px)]">
@@ -327,9 +315,7 @@ const ResponsiveDashboardContent = () => {
               </h3>
               <div className="flex items-center gap-2 flex-wrap">
                 <span className="inline-flex items-center gap-1 px-2 py-0.5 bg-blue-50 text-blue-600 rounded text-[clamp(12px,0.68vw,13px)] font-medium">
-                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 6.25278V19.2528M12 6.25278C10.8321 5.47686 9.24649 5 7.5 5C5.75351 5 4.16789 5.47686 3 6.25278V19.2528C4.16789 18.4769 5.75351 18 7.5 18C9.24649 18 10.8321 18.4769 12 19.2528M12 6.25278C13.1679 5.47686 14.7535 5 16.5 5C18.2465 5 19.8321 5.47686 21 6.25278V19.2528C19.8321 18.4769 18.2465 18 16.5 18C14.7535 18 13.1679 18.4769 12 19.2528" stroke="currentColor" strokeWidth="2"/>
-                  </svg>
+                  <img src="/Clip path group.png" alt="Reading" className="w-3.5 h-3.5" />
                   Reading
                 </span>
                 <span className="inline-flex items-center gap-1 text-gray-600 text-[clamp(12px,0.68vw,13px)]">

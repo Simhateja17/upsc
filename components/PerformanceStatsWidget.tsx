@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 
 const PerformanceStatsWidget = () => {
   return (
@@ -18,11 +17,21 @@ const PerformanceStatsWidget = () => {
       >
         {/* Header */}
         <div className="flex items-center gap-[clamp(6px,0.42vw,8px)] mb-[clamp(16px,1.04vw,20px)]">
-          <svg className="w-[clamp(18px,1.25vw,24px)] h-[clamp(18px,1.25vw,24px)] text-red-500" viewBox="0 0 24 24" fill="none">
-            <path d="M3 3v18h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M18 9l-5 5-4-4-3 3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-          <h2 className="font-arimo font-bold text-[#101828]" style={{ fontSize: 'clamp(16px,1.04vw,20px)', lineHeight: '1.2' }}>
+          <img 
+            src="/image-removebg-preview (41) 1.png" 
+            alt="Performance Stats" 
+            className="w-[clamp(18px,1.25vw,24px)] h-[clamp(18px,1.25vw,24px)]"
+          />
+          <h2 
+            className="font-arimo text-[#101828]" 
+            style={{ 
+              fontWeight: 700,
+              fontSize: '21px',
+              lineHeight: '24px',
+              letterSpacing: '0px',
+              whiteSpace: 'nowrap'
+            }}
+          >
             Your Performance Stats
           </h2>
         </div>
@@ -205,11 +214,9 @@ const PerformanceStatsWidget = () => {
                 background: '#FFF5E6',
               }}
             >
-              <Image 
-                src="/image-removebg-preview (22) 1.png" 
+              <img 
+                src="/image-removebg-preview (24) 1.png" 
                 alt="30-Day Streak" 
-                width={45} 
-                height={42}
                 style={{ width: '70%', height: 'auto' }}
               />
             </div>
@@ -225,11 +232,9 @@ const PerformanceStatsWidget = () => {
                 background: '#FFF9E6',
               }}
             >
-              <Image 
-                src="/image-removebg-preview (23) 1.png" 
+              <img 
+                src="/image-removebg-preview (40) 1.png" 
                 alt="Quick Learner" 
-                width={45} 
-                height={42}
                 style={{ width: '70%', height: 'auto' }}
               />
             </div>
@@ -245,11 +250,9 @@ const PerformanceStatsWidget = () => {
                 background: '#FFF5F5',
               }}
             >
-              <Image 
-                src="/image-removebg-preview (24) 1.png" 
+              <img 
+                src="/image-removebg-preview (22) 1 (1).png" 
                 alt="95% Accuracy" 
-                width={45} 
-                height={42}
                 style={{ width: '70%', height: 'auto' }}
               />
             </div>
@@ -284,11 +287,9 @@ const PerformanceStatsWidget = () => {
               padding: 'clamp(12px,0.83vw,16px)',
             }}
           >
-            <Image 
+            <img 
               src="/icon-folder.png" 
               alt="Flashcards" 
-              width={40} 
-              height={40}
               style={{ width: 'clamp(32px,2.08vw,40px)', height: 'auto' }}
             />
             <p className="font-arimo font-bold text-[#101828]" style={{ fontSize: 'clamp(12px,0.73vw,14px)', lineHeight: '1.43' }}>Flashcards</p>
@@ -300,11 +301,9 @@ const PerformanceStatsWidget = () => {
               padding: 'clamp(12px,0.83vw,16px)',
             }}
           >
-            <Image 
+            <img 
               src="/list-fail.png" 
               alt="Wrong Attempts" 
-              width={40} 
-              height={40}
               style={{ width: 'clamp(32px,2.08vw,40px)', height: 'auto' }}
             />
             <p className="font-arimo font-bold text-[#101828]" style={{ fontSize: 'clamp(12px,0.73vw,14px)', lineHeight: '1.43' }}>Wrong Attempts</p>
@@ -316,11 +315,9 @@ const PerformanceStatsWidget = () => {
               padding: 'clamp(12px,0.83vw,16px)',
             }}
           >
-            <Image 
+            <img 
               src="/newspaper-folding.png" 
               alt="Mindmaps" 
-              width={40} 
-              height={40}
               style={{ width: 'clamp(32px,2.08vw,40px)', height: 'auto' }}
             />
             <p className="font-arimo font-bold text-[#101828]" style={{ fontSize: 'clamp(12px,0.73vw,14px)', lineHeight: '1.43' }}>Mindmaps</p>
@@ -332,11 +329,9 @@ const PerformanceStatsWidget = () => {
               padding: 'clamp(12px,0.83vw,16px)',
             }}
           >
-            <Image 
+            <img 
               src="/tree-list.png" 
               alt="Quick Notes" 
-              width={40} 
-              height={40}
               style={{ width: 'clamp(32px,2.08vw,40px)', height: 'auto' }}
             />
             <p className="font-arimo font-bold text-[#101828]" style={{ fontSize: 'clamp(12px,0.73vw,14px)', lineHeight: '1.43' }}>Quick Notes</p>
@@ -462,12 +457,7 @@ const PerformanceStatsWidget = () => {
         }}
       >
         <div className="flex items-center gap-[clamp(6px,0.42vw,8px)] mb-[clamp(12px,0.83vw,16px)]">
-          <svg className="w-[clamp(18px,1.09vw,21px)] h-[clamp(20px,1.25vw,24px)]" viewBox="0 0 21 24" fill="none">
-            <rect x="3" y="3" width="15" height="18" rx="2" fill="white"/>
-            <rect x="6" y="0" width="2" height="5" fill="white"/>
-            <rect x="13" y="0" width="2" height="5" fill="white"/>
-            <path d="M3 8h15M7 12h7M7 16h5" stroke="#0E182D" strokeWidth="1.5"/>
-          </svg>
+          <img src="/calendar.png" alt="Calendar" className="w-[clamp(18px,1.09vw,21px)] h-[clamp(20px,1.25vw,24px)]" />
           <h3 className="font-inter font-semibold text-white" style={{ fontSize: 'clamp(13px,0.78vw,15px)', lineHeight: '1.2' }}>
             Upcoming Test
           </h3>

@@ -10,43 +10,43 @@ const Sidebar = () => {
     {
       title: 'DASHBOARD',
       items: [
-        { id: 'overview', label: 'Overview', icon: '/sidebar-overview.png', path: '/dashboard' },
+        { id: 'overview', label: 'Overview', icon: '/sidebar-overview-new.png', path: '/dashboard' },
         { id: 'study-planner', label: 'Study Planner', icon: '/sidebar-study-planner.png', path: '/dashboard/study-planner' },
         { id: 'jeet-gpt', label: 'Jeet GPT', icon: '/sidebar-jeet-gpt.png', path: '/dashboard/jeet-gpt' },
-        { id: 'syllabus-tracker', label: 'Syllabus Tracker', icon: '/sidebar-syllabus.png', path: '/dashboard/syllabus-tracker' },
+        { id: 'syllabus-tracker', label: 'Syllabus Tracker', icon: '/sidebar-syllabus-new.png', path: '/dashboard/syllabus-tracker' },
       ],
     },
     {
       title: 'LEARNING',
       items: [
         { id: 'video-lectures', label: 'Video Lectures', icon: '/sidebar-video.png', path: '/dashboard/video-lectures' },
-        { id: 'study-material', label: 'Study Material', icon: '/sidebar-study-material.png', path: '/dashboard/study-material' },
+        { id: 'study-material', label: 'Study Material', icon: '/sidebar-study-material-new2.png', path: '/dashboard/study-material' },
         { id: 'current-affairs', label: 'Current Affairs', icon: '/sidebar-current-affairs.png', path: '/dashboard/current-affairs' },
         { id: 'test-series', label: 'Test Series', icon: '/sidebar-test-series.png', path: '/dashboard/test-series' },
-        { id: 'mentorship', label: 'Personal Mentorship', icon: '/sidebar-mentorship.png', path: '/dashboard/mentorship' },
+        { id: 'mentorship', label: 'Personal Mentorship', icon: '/sidebar-mentorship-new.png', path: '/dashboard/mentorship' },
       ],
     },
     {
       title: 'PRACTICE',
       items: [
-        { id: 'daily-mcq', label: 'Daily MCQ', icon: '/sidebar-daily-mcq.png', path: '/dashboard/daily-mcq' },
-        { id: 'daily-answer', label: 'Daily Answer Writing', icon: '/sidebar-daily-answer.png', path: '/dashboard/daily-answer' },
-        { id: 'mock-tests', label: 'Mock Tests', icon: '/sidebar-mock-tests.png', path: '/dashboard/mock-tests' },
-        { id: 'pyq', label: 'Previous Year Questions', icon: '/sidebar-pyq.png', path: '/dashboard/pyq' },
+        { id: 'daily-mcq', label: 'Daily MCQ', icon: '/sidebar-daily-mcq-new.png', path: '/dashboard/daily-mcq' },
+        { id: 'daily-answer', label: 'Daily Answer Writing', icon: '/sidebar-daily-answer-new.png', path: '/dashboard/daily-answer' },
+        { id: 'mock-tests', label: 'Mock Tests', icon: '/sidebar-mock-tests-new.png', path: '/dashboard/mock-tests' },
+        { id: 'pyq', label: 'Previous Year Questions', icon: '/sidebar-pyq-new.png', path: '/dashboard/pyq' },
       ],
     },
     {
       title: 'ANALYTICS',
       items: [
-        { id: 'performance', label: 'Performance Analytics', icon: '/sidebar-performance.png', path: '/dashboard/performance' },
-        { id: 'test-analytics', label: 'Analytics', icon: '/sidebar-analytics.png', path: '/dashboard/test-analytics' },
+        { id: 'performance', label: 'Performance Analytics', icon: '/sidebar-performance-new.png', path: '/dashboard/performance' },
+        { id: 'test-analytics', label: 'Analytics', icon: '/sidebar-analytics-new.png', path: '/dashboard/test-analytics' },
       ],
     },
     {
       title: 'REVISION TOOLS',
       items: [
-        { id: 'flashcards', label: 'Flashcards', icon: '/sidebar-flashcards.png', path: '/dashboard/flashcards' },
-        { id: 'mindmap', label: 'Mindmaps', icon: '/sidebar-mindmap.png', path: '/dashboard/mindmap' },
+        { id: 'flashcards', label: 'Flashcards', icon: '/sidebar-flashcards-new.png', path: '/dashboard/flashcards' },
+        { id: 'mindmap', label: 'Mindmaps', icon: '/sidebar-mindmap-new.png', path: '/dashboard/mindmap' },
       ],
     },
     {
@@ -60,7 +60,7 @@ const Sidebar = () => {
       title: 'SUPPORT',
       items: [
         { id: 'qa-forum', label: 'Q&A Forum', icon: '/sidebar-qa-forum.png', path: '/dashboard/qa-forum' },
-        { id: 'mental-health', label: 'Mental Health Buddy', icon: '/sidebar-mentorship.png', path: '/dashboard/mental-health' },
+        { id: 'mental-health', label: 'Mental Health Buddy', icon: '/sidebar-mental-health-new.png', path: '/dashboard/mental-health' },
       ],
     },
   ];

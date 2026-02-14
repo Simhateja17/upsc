@@ -40,13 +40,10 @@ const DashboardHeader = () => {
 
         {/* User Profile Section */}
       <div
-        className="flex items-center gap-[clamp(0.5rem,0.8vw,1rem)] px-[clamp(0.75rem,1.2vw,1.5rem)] py-[clamp(0.5rem,0.6vw,0.75rem)] rounded-[36px] border min-w-[clamp(180px,11.6vw,223px)] h-[clamp(48px,2.97vw,57px)]"
+        className="flex items-center gap-[clamp(0.5rem,0.8vw,1rem)] px-[clamp(0.75rem,1.2vw,1.5rem)] py-[clamp(0.5rem,0.6vw,0.75rem)] rounded-[36px] min-w-[clamp(180px,11.6vw,223px)] h-[clamp(48px,2.97vw,57px)] relative"
         style={{
           background: 'linear-gradient(85.13deg, rgba(30, 40, 117, 0.5) 2.96%, rgba(30, 40, 117, 0.5) 96.14%)',
-          borderImage: 'conic-gradient(from 179.78deg at 50% 50%, rgba(255, 255, 255, 0.07) -54.98deg, #B19E66 52.13deg, rgba(255, 255, 255, 0.04) 125.06deg, #FFFFFF 235.09deg, rgba(255, 255, 255, 0.07) 305.02deg, #B19E66 412.13deg)',
-          borderWidth: '1px',
-          borderStyle: 'solid',
-          borderColor: '#B19E66',
+          border: '1px solid #B19E66',
           boxShadow: '0px 16px 64px 0px rgba(104, 1, 255, 0.12)',
         }}
       >

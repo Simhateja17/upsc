@@ -8,6 +8,9 @@ copy "..\Icon.png" "public\icon-flashcards.png"
 copy "..\list-fail.png" "public\icon-wrong-attempts.png"
 copy "..\tree-list.png" "public\icon-mindmaps.png"
 copy "..\newspaper-folding.png" "public\icon-quick-notes.png"
+copy "..\image-removebg-preview (59) 1.png" "public\image-removebg-preview (59) 1.png"
+copy "..\image-removebg-preview (71) 1.png" "public\image-removebg-preview (71) 1.png"
+copy "..\tag-one.png" "public\tag-one.png"
 
 echo.
 echo Images copied successfully!

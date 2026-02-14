@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 
 const DashboardPreview = () => {
@@ -9,7 +11,7 @@ const DashboardPreview = () => {
           className="font-lora font-bold text-center text-[#1C2E45] leading-[150%]"
           style={{
             fontSize: 'clamp(2rem, 3.385vw, 4.063rem)',
-            letterSpacing: '0.01em',
+            letterSpacing: '0.01em'
           }}
         >
           Personalized Dashboard Preview
@@ -18,9 +20,7 @@ const DashboardPreview = () => {
         {/* Placeholder space for dashboard preview */}
         <div
           className="w-full mt-[clamp(2rem,4vw,5rem)]"
-          style={{
-            minHeight: 'clamp(200px, 25vw, 400px)',
-          }}
+          style={{ minHeight: 'clamp(200px, 25vw, 400px)' }}
         />
       </div>
     </section>
