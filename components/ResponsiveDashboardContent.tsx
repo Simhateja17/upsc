@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const ResponsiveDashboardContent = () => {
   return (
-    <div className="w-full min-h-screen bg-white py-[clamp(1.5rem,3vw,4rem)] px-[clamp(1rem,2vw,3rem)]">
+    <div className="w-full min-h-screen py-[clamp(1.5rem,3vw,4rem)] px-[clamp(1rem,2vw,3rem)]" style={{ background: 'linear-gradient(180deg, #E6EAF0 0%, #DDE2EA 100%)' }}>
       <div className="max-w-[1400px] mx-auto">
 
         {/* Greeting Card */}
@@ -135,8 +135,14 @@ const ResponsiveDashboardContent = () => {
           </button>
         </div>
 
-        {/* Today's Trio Section */}
-        <div className="mb-[clamp(2rem,2.5vw,3rem)]">
+        {/* Today's Trio Section — white wrapper container */}
+        <div
+          className="mb-[clamp(2rem,2.5vw,3rem)] rounded-[14px] p-[clamp(1.25rem,1.5vw,1.75rem)]"
+          style={{
+            background: '#FFFFFF',
+            boxShadow: '0px 1px 2px -1px rgba(0,0,0,0.1), 0px 1px 3px 0px rgba(0,0,0,0.1)',
+          }}
+        >
           <div className="flex items-center gap-2 mb-[clamp(1rem,1.25vw,1.5rem)]">
             <img src="/image-removebg-preview (46) 1.png" alt="Today's Trio" className="w-[clamp(18px,1.25vw,22px)] h-[clamp(18px,1.25vw,22px)]" />
             <h2 className="font-inter font-bold text-[clamp(18px,1.2vw,20px)] text-[#1A1A1A]">
@@ -149,12 +155,12 @@ const ResponsiveDashboardContent = () => {
             <Link
               href="/dashboard/daily-mcq"
               aria-label="Open Daily MCQ"
-              className="block bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative cursor-pointer h-full flex flex-col"
+              className="block bg-white rounded-[10px] border border-[#E5E7EB] p-[clamp(1rem,1.25vw,1.5rem)] relative cursor-pointer h-full flex flex-col hover:border-[#D0D5DD] transition-colors"
             >
               <div className="absolute top-3 right-3 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
                 <img src="/image-removebg-preview (48) 1.png" alt="Completed" className="w-4 h-4" />
               </div>
-              
+
               <div className="flex items-center gap-2 mb-3">
                 <img src="/Text.png" alt="MCQ" className="w-5 h-5" />
                 <h3 className="font-inter font-semibold text-[clamp(15px,0.94vw,16px)] text-[#1A1A1A]">
@@ -176,7 +182,8 @@ const ResponsiveDashboardContent = () => {
             </Link>
 
             {/* Daily Editorial Card */}
-            <div className="bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow h-full flex flex-col">
+            <Link href="/dashboard/daily-answer" className="block h-full"> 
+            <div className="bg-white rounded-[10px] border border-[#E5E7EB] p-[clamp(1rem,1.25vw,1.5rem)] h-full flex flex-col hover:border-[#D0D5DD] transition-colors cursor-pointer">
               <div className="flex items-center gap-2 mb-3">
                 <img src="/image-removebg-preview (31) 1.png" alt="Editorial" className="w-5 h-5" />
                 <h3 className="font-inter font-semibold text-[clamp(15px,0.94vw,16px)] text-[#1A1A1A]">
@@ -196,13 +203,14 @@ const ResponsiveDashboardContent = () => {
                 Read Now
               </button>
             </div>
+            </Link>
 
             {/* Mains Question Card */}
-            <div className="bg-white rounded-lg p-[clamp(1rem,1.25vw,1.5rem)] border border-gray-200 shadow-sm hover:shadow-md transition-shadow relative h-full flex flex-col">
+            <div className="bg-white rounded-[10px] border border-[#E5E7EB] p-[clamp(1rem,1.25vw,1.5rem)] relative h-full flex flex-col hover:border-[#D0D5DD] transition-colors">
               <div className="absolute top-3 right-3 px-2 py-1 bg-teal-50 text-teal-600 rounded text-[clamp(11px,0.63vw,12px)] font-medium">
                 AI Evaluation
               </div>
-              
+
               <div className="flex items-center gap-2 mb-3">
                 <img src="/image-removebg-preview (31) 1.png" alt="Mains" className="w-5 h-5" />
                 <h3 className="font-inter font-semibold text-[clamp(15px,0.94vw,16px)] text-[#1A1A1A]">
@@ -225,8 +233,14 @@ const ResponsiveDashboardContent = () => {
           </div>
         </div>
 
-        {/* Today's Study Tasks Section */}
-        <div className="mb-[clamp(2rem,2.5vw,3rem)]">
+        {/* Today's Study Tasks Section — white wrapper container */}
+        <div
+          className="mb-[clamp(2rem,2.5vw,3rem)] rounded-[14px] p-[clamp(1.25rem,1.5vw,1.75rem)]"
+          style={{
+            background: '#FFFFFF',
+            boxShadow: '0px 1px 2px -1px rgba(0,0,0,0.1), 0px 1px 3px 0px rgba(0,0,0,0.1)',
+          }}
+        >
           <div className="flex items-center justify-between mb-[clamp(1rem,1.25vw,1.5rem)]">
             <div className="flex items-center gap-2">
               <img src="/image-removebg-preview (5) 1.png" alt="Today's Study Tasks" className="w-[clamp(18px,1.25vw,22px)] h-[clamp(18px,1.25vw,22px)]" />
@@ -248,7 +262,7 @@ const ResponsiveDashboardContent = () => {
           </div>
 
           {/* Task 1 - Red Border */}
-          <div className="bg-white rounded-lg border-l-4 border-red-500 p-[clamp(0.75rem,1vw,1.25rem)] mb-[clamp(0.75rem,1vw,1rem)] shadow-sm flex items-start justify-between">
+          <div className="rounded-lg border-l-4 border-red-500 p-[clamp(0.75rem,1vw,1.25rem)] mb-[clamp(0.75rem,1vw,1rem)] flex items-start justify-between">
             <div className="flex-1">
               <h3 className="font-inter font-semibold text-[clamp(14px,0.94vw,16px)] text-[#1A1A1A] mb-2">
                 Complete Polity Chapter 5 - Fundamental Rights
@@ -278,7 +292,7 @@ const ResponsiveDashboardContent = () => {
           </div>
 
           {/* Task 2 - Green Border */}
-          <div className="bg-white rounded-lg border-l-4 border-green-500 p-[clamp(0.75rem,1vw,1.25rem)] mb-[clamp(0.75rem,1vw,1rem)] shadow-sm flex items-start justify-between">
+          <div className="rounded-lg border-l-4 border-green-500 p-[clamp(0.75rem,1vw,1.25rem)] mb-[clamp(0.75rem,1vw,1rem)] flex items-start justify-between">
             <div className="flex-1">
               <h3 className="font-inter font-semibold text-[clamp(14px,0.94vw,16px)] text-[#1A1A1A] mb-2">
                 Watch Economics Lecture - Fiscal Policy
@@ -308,7 +322,7 @@ const ResponsiveDashboardContent = () => {
           </div>
 
           {/* Task 3 - Yellow Border */}
-          <div className="bg-white rounded-lg border-l-4 border-yellow-500 p-[clamp(0.75rem,1vw,1.25rem)] mb-[clamp(0.75rem,1vw,1rem)] shadow-sm flex items-start justify-between">
+          <div className="rounded-lg border-l-4 border-yellow-500 p-[clamp(0.75rem,1vw,1.25rem)] mb-[clamp(0.75rem,1vw,1rem)] flex items-start justify-between">
             <div className="flex-1">
               <h3 className="font-inter font-semibold text-[clamp(14px,0.94vw,16px)] text-[#1A1A1A] mb-2">
                 Solve 50 MCQs on Modern History
@@ -338,7 +352,7 @@ const ResponsiveDashboardContent = () => {
           </div>
 
           {/* Add Custom Task */}
-          <div className="bg-white rounded-lg p-[clamp(0.75rem,1vw,1.25rem)] mb-[clamp(0.75rem,1vw,1rem)] shadow-sm flex items-center justify-between">
+          <div className="rounded-lg p-[clamp(0.75rem,1vw,1.25rem)] mb-[clamp(0.75rem,1vw,1rem)] flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-[clamp(40px,2.6vw,48px)] h-[clamp(40px,2.6vw,48px)] bg-[#17223E] rounded-lg flex items-center justify-center flex-shrink-0">
                 <svg className="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none">
@@ -363,7 +377,7 @@ const ResponsiveDashboardContent = () => {
           </div>
 
           {/* Start Focus Session Button */}
-          <button className="w-full bg-[#17223E] text-white rounded-lg py-[clamp(0.75rem,1vw,1rem)] font-inter font-semibold text-[clamp(14px,0.94vw,16px)] hover:bg-[#1E2875] transition-colors flex items-center justify-center gap-2 shadow-md">
+          <button className="w-full bg-[#17223E] text-white rounded-lg py-[clamp(0.75rem,1vw,1rem)] font-inter font-semibold text-[clamp(14px,0.94vw,16px)] hover:bg-[#1E2875] transition-colors flex items-center justify-center gap-2">
             <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
               <circle cx="12" cy="12" r="10" fill="white"/>
               <path d="M10 8l6 4-6 4V8z" fill="#17223E"/>

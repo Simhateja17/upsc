@@ -8,14 +8,14 @@ export default function QuestionReviewPage() {
   const [showExplanation, setShowExplanation] = useState(true);
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#F5F7FA]">
+    <div className="flex flex-col min-h-screen panel-recessed">
       {/* Header */}
       <DashboardHeader />
 
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center py-[clamp(2rem,4vw,4rem)] px-[clamp(1rem,2vw,3rem)]">
         <div 
-          className="bg-white rounded-[clamp(10px,0.52vw,10px)] shadow-lg"
+          className="card-elevated rounded-[clamp(10px,0.52vw,10px)]"
           style={{ 
             width: 'clamp(700px,50vw,962px)',
             padding: 'clamp(1.5rem,2vw,2.5rem)'

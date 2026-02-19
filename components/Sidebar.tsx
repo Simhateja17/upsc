@@ -66,7 +66,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <aside className="w-[clamp(280px,15.4vw,305px)] h-screen bg-white border-r border-gray-200 overflow-y-auto sticky top-0 left-0">
+    <aside className="w-[clamp(280px,15.4vw,305px)] h-screen bg-white overflow-y-auto sticky top-0 left-0" style={{ boxShadow: '3px 0 12px rgba(0,0,0,0.06), 1px 0 3px rgba(0,0,0,0.04)', zIndex: 1 }}>
       {/* Sidebar Content */}
       <nav className="py-[clamp(1rem,1.5vw,1.5rem)] px-[clamp(0.75rem,1vw,1rem)]">
         {navigationSections.map((section, sectionIndex) => (

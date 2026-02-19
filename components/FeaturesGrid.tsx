@@ -69,7 +69,7 @@ const AnalyticsIcon = () => (
 
 const FeaturesGrid = () => {
   return (
-    <section className="w-full py-[clamp(3rem,5.208vw,6.25rem)]" style={{ backgroundColor: '#FAFBFE' }}>
+    <section className="w-full py-[clamp(3rem,5.208vw,6.25rem)] panel-recessed">
       <div className="w-full max-w-[85rem] mx-auto px-[clamp(2rem,6vw,8rem)]">
         {/* Section Heading */}
         <h2 
@@ -87,7 +87,7 @@ const FeaturesGrid = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-[1rem] border border-[#E7E0DA] p-[clamp(1.25rem,1.5vw,1.75rem)] flex flex-col transition-all duration-300 hover:shadow-lg hover:border-[#D0C9C3]"
+              className="card-elevated rounded-[1rem] p-[clamp(1.25rem,1.5vw,1.75rem)] flex flex-col"
               style={{
                 minHeight: 'clamp(14rem, 16vw, 18rem)',
               }}

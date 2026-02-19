@@ -6,14 +6,14 @@ import Link from 'next/link';
 
 export default function DailyMcqIntroPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#F9FAFB]">
+    <div className="flex flex-col min-h-screen panel-recessed">
       {/* Header */}
       <DashboardHeader />
 
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center p-4">
         {/* Intro Card */}
-        <div className="w-full max-w-[448px] bg-white rounded-[16px] shadow-[0px_4px_6px_-4px_rgba(0,0,0,0.1),0px_10px_15px_-3px_rgba(0,0,0,0.1)] p-8 text-center">
+        <div className="w-full max-w-[448px] card-elevated rounded-[16px] p-8 text-center">
           {/* Icon */}
           <div className="flex justify-center mb-6">
             <img 

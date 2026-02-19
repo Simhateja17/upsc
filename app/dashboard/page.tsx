@@ -5,7 +5,7 @@ import PerformanceStatsWidget from '@/components/PerformanceStatsWidget';
 
 export default function DashboardPage() {
   return (
-    <div className="flex flex-col h-screen bg-gray-50">
+    <div className="flex flex-col h-screen" style={{ background: '#D8DEE6' }}>
       {/* Dashboard Header - Full Width */}
       <DashboardHeader />
 
@@ -20,8 +20,8 @@ export default function DashboardPage() {
         </main>
 
         {/* Right Sidebar */}
-        <aside 
-          className="hidden xl:block border-l border-gray-200 bg-white"
+        <aside
+          className="hidden xl:block bg-white overflow-y-auto"
           style={{
             width: 'clamp(320px,18.6vw,358px)',
             minWidth: '320px',

@@ -6,14 +6,14 @@ import Link from 'next/link';
 
 export default function DailyMcqResultsPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#F5F7FA]">
+    <div className="flex flex-col min-h-screen panel-recessed">
       {/* Header */}
       <DashboardHeader />
 
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center py-[clamp(2rem,4vw,4rem)] px-[clamp(1rem,2vw,3rem)]">
         <div 
-          className="bg-white rounded-[clamp(10px,0.52vw,10px)] shadow-lg"
+          className="card-elevated rounded-[clamp(10px,0.52vw,10px)]"
           style={{ 
             width: 'clamp(600px,40vw,768px)',
             padding: 'clamp(2rem,2.5vw,3rem) clamp(1.5rem,2vw,2.5rem)'

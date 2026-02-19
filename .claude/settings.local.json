@@ -1,12 +1,17 @@
 {
   "permissions": {
     "allow": [
-      "Bash(copy \"C:\\\\Users\\\\suria\\\\Downloads\\\\Ellipse 34.png\" \"C:\\\\Users\\\\suria\\\\OneDrive\\\\Desktop\\\\upsc-final\\\\public\\\\testimonial-avatar-1.png\")",
-      "Bash(cmd /c copy \"C:\\\\Users\\\\suria\\\\Downloads\\\\Ellipse 34.png\" \"C:\\\\Users\\\\suria\\\\OneDrive\\\\Desktop\\\\upsc-final\\\\public\\\\testimonial-avatar-1.png\")",
-      "Bash(cmd /c copy:*)",
-      "Bash(cmd /c dir:*)",
-      "Bash(powershell:*)",
-      "Bash(npm run dev:*)"
+      "Bash(git remote set-url:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nUpdate UI: dashboard improvements, daily MCQ pages, and icon updates\n\n- Add daily MCQ challenge, results, review, and next-steps pages\n- Update Back to Dashboard button styles across pages\n- Fix date navigation arrow directions on dashboard\n- Update sidebar icons for Test Series and Current Affairs\n- Update various component styles and layouts\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(git push:*)",
+      "Bash(ls:*)",
+      "Bash(git commit:*)",
+      "Bash(npm run build:*)",
+      "Bash(test:*)",
+      "Bash(npm install:*)",
+      "Bash(find:*)",
+      "Bash(npx next build)"
     ]
   }
 }

@@ -45,18 +45,17 @@ export default function NextStepsPage() {
   ];
 
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAFBFE]">
+    <div className="flex flex-col min-h-screen panel-recessed">
       {/* Header */}
       <DashboardHeader />
 
       {/* Main Content */}
       <main className="flex-1 flex items-center justify-center py-[clamp(2rem,4vw,4rem)] px-[clamp(1rem,2vw,3rem)]">
         <div 
-          className="bg-white rounded-[clamp(8px,0.52vw,10px)]"
-          style={{ 
+          className="card-elevated rounded-[clamp(8px,0.52vw,10px)]"
+          style={{
             width: 'clamp(700px,46.67vw,896px)',
             padding: 'clamp(2rem,2.08vw,2.5rem)',
-            boxShadow: '0px 1px 2px -1px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.1)'
           }}
         >
           {/* Title Section */}

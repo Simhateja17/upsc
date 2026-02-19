@@ -7,12 +7,11 @@ const PerformanceStatsWidget = () => {
     <div className="w-full space-y-[clamp(12px,0.83vw,16px)]">
       {/* Performance Stats Card */}
       <div
-        className="rounded-[clamp(16px,1.04vw,20px)] border"
+        className="rounded-[clamp(16px,1.04vw,20px)]"
         style={{
-          borderWidth: '0.8px',
-          borderColor: '#E5E7EB',
           background: '#FFFFFF',
           padding: 'clamp(20px,1.29vw,24.8px) clamp(20px,1.25vw,24px)',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.04), 0 3px 10px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04)',
         }}
       >
         {/* Header */}
@@ -100,70 +99,70 @@ const PerformanceStatsWidget = () => {
         <div className="grid grid-cols-2 gap-[clamp(10px,0.73vw,14px)]">
           {/* Study Time Today */}
           <div
-            className="rounded-[clamp(12px,0.73vw,14px)]"
+            className="rounded-[14px] flex flex-col items-center justify-center text-center"
             style={{
               background: '#EEF2FF',
-              padding: 'clamp(12px,0.83vw,16px)',
+              padding: '16px 12px',
             }}
           >
-            <div className="font-outfit font-semibold text-[#17223E] leading-none mb-[clamp(6px,0.42vw,8px)]" style={{ fontSize: 'clamp(16px,1.04vw,20px)' }}>
+            <div className="font-outfit font-bold text-[#17223E] leading-none" style={{ fontSize: '20px', marginBottom: '6px' }}>
               4h 32m
             </div>
-            <p className="font-arimo text-[#6B7280]" style={{ fontSize: 'clamp(9px,0.52vw,10px)', lineHeight: '1.2' }}>
+            <p className="font-arimo text-[#6B7280]" style={{ fontSize: '11px', lineHeight: '1.3' }}>
               Study Time Today
             </p>
           </div>
 
           {/* Tests Taken */}
           <div
-            className="rounded-[clamp(12px,0.73vw,14px)]"
+            className="rounded-[14px] flex flex-col items-center justify-center text-center"
             style={{
               background: '#EEF2FF',
-              padding: 'clamp(12px,0.83vw,16px)',
+              padding: '16px 12px',
             }}
           >
-            <div className="font-outfit font-semibold text-[#17223E] leading-none mb-[clamp(6px,0.42vw,8px)]" style={{ fontSize: 'clamp(16px,1.04vw,20px)' }}>
+            <div className="font-outfit font-bold text-[#17223E] leading-none" style={{ fontSize: '20px', marginBottom: '6px' }}>
               47
             </div>
-            <p className="font-arimo text-[#6B7280]" style={{ fontSize: 'clamp(9px,0.52vw,10px)', lineHeight: '1.2' }}>
+            <p className="font-arimo text-[#6B7280]" style={{ fontSize: '11px', lineHeight: '1.3' }}>
               Tests Taken
             </p>
           </div>
 
           {/* Your Rank */}
           <div
-            className="rounded-[clamp(12px,0.73vw,14px)]"
+            className="rounded-[14px] flex flex-col items-center justify-center text-center"
             style={{
               background: '#EEF2FF',
-              padding: 'clamp(12px,0.83vw,16px)',
+              padding: '16px 12px',
             }}
           >
-            <div className="font-outfit font-semibold text-[#17223E] leading-none mb-[clamp(6px,0.42vw,8px)]" style={{ fontSize: 'clamp(16px,1.04vw,20px)' }}>
+            <div className="font-outfit font-bold text-[#17223E] leading-none" style={{ fontSize: '20px', marginBottom: '6px' }}>
               #1274
             </div>
-            <p className="font-arimo text-[#6B7280]" style={{ fontSize: 'clamp(9px,0.52vw,10px)', lineHeight: '1.2' }}>
-              Your Rank <span className="text-green-600 font-arimo">Top 15%</span>
+            <p className="font-arimo text-[#6B7280]" style={{ fontSize: '11px', lineHeight: '1.3' }}>
+              Your Rank: <span className="text-green-600 font-arimo">Top 15%</span>
             </p>
           </div>
 
           {/* Jeet Coins */}
           <div
-            className="rounded-[clamp(12px,0.73vw,14px)]"
+            className="rounded-[14px] flex flex-col items-center justify-center text-center"
             style={{
               background: '#EEF2FF',
-              padding: 'clamp(12px,0.83vw,16px)',
+              padding: '16px 12px',
             }}
           >
-            <div className="flex items-center gap-1 mb-[clamp(6px,0.42vw,8px)]">
-              <svg className="w-[clamp(14px,0.83vw,16px)] h-[clamp(14px,0.83vw,16px)]" viewBox="0 0 24 24" fill="none">
+            <div className="flex items-center justify-center" style={{ gap: '4px', marginBottom: '6px' }}>
+              <svg style={{ width: '18px', height: '18px' }} viewBox="0 0 24 24" fill="none">
                 <circle cx="12" cy="12" r="9" fill="#FFD700"/>
                 <text x="12" y="16" fontSize="10" fill="#000" textAnchor="middle" fontWeight="bold">₹</text>
               </svg>
-              <span className="font-outfit font-semibold text-[#17223E] leading-none" style={{ fontSize: 'clamp(16px,1.04vw,20px)' }}>
+              <span className="font-outfit font-bold text-[#17223E] leading-none" style={{ fontSize: '20px' }}>
                 2450
               </span>
             </div>
-            <p className="font-arimo text-[#6B7280]" style={{ fontSize: 'clamp(9px,0.52vw,10px)', lineHeight: '1.2' }}>
+            <p className="font-arimo text-[#6B7280]" style={{ fontSize: '11px', lineHeight: '1.3' }}>
               Jeet Coins
             </p>
           </div>
@@ -172,38 +171,46 @@ const PerformanceStatsWidget = () => {
 
       {/* Weekly Leaderboard */}
       <div
-        className="rounded-[clamp(16px,1.04vw,20px)] cursor-pointer hover:shadow-md transition-shadow flex items-center justify-center"
+        className="cursor-pointer hover:shadow-md transition-shadow flex items-center justify-center"
         style={{
           background: '#74A0FF30',
-          height: 'clamp(48px,2.97vw,57px)',
+          height: '50px',
+          borderRadius: '16px',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.04), 0 3px 10px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04)',
         }}
       >
-        <div className="flex items-center gap-[clamp(8px,0.52vw,10px)]">
-          <svg className="w-[clamp(20px,1.25vw,24px)] h-[clamp(20px,1.25vw,24px)] text-[#1E2875]" viewBox="0 0 24 24" fill="currentColor">
+        <div className="flex items-center" style={{ gap: '8px' }}>
+          <svg style={{ width: '20px', height: '20px' }} viewBox="0 0 24 24" fill="#1E2875">
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
           </svg>
-          <span className="font-outfit font-semibold text-[#1E2875]" style={{ fontSize: 'clamp(20px,1.46vw,28px)', lineHeight: '1' }}>
+          <span className="font-outfit font-semibold whitespace-nowrap" style={{ fontSize: '18px', lineHeight: '1', color: '#1E2875' }}>
             Weekly Leaderboard
           </span>
-          <svg className="w-[clamp(16px,1.04vw,20px)] h-[clamp(16px,1.04vw,20px)] text-[#1E2875]" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+          <svg style={{ width: '16px', height: '16px' }} viewBox="0 0 24 24" fill="none">
+            <path d="M9 18l6-6-6-6" stroke="#1E2875" strokeWidth="2" strokeLinecap="round"/>
           </svg>
         </div>
       </div>
 
       {/* Achievement Badges */}
       <div
-        className="rounded-[clamp(16px,1.04vw,20px)] border"
+        className="rounded-[clamp(16px,1.04vw,20px)]"
         style={{
-          borderWidth: '0.8px',
-          borderColor: '#E5E7EB',
           background: '#FFFFFF',
           padding: 'clamp(20px,1.29vw,24.8px) clamp(20px,1.25vw,24px)',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.04), 0 3px 10px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04)',
         }}
       >
-        <h3 className="font-arimo font-bold text-[#101828] mb-[clamp(16px,1.25vw,24px)]" style={{ fontSize: 'clamp(16px,1.04vw,20px)', lineHeight: '1.2' }}>
-          Achievement Badges
-        </h3>
+        <div className="flex items-center gap-[clamp(6px,0.42vw,8px)] mb-[clamp(16px,1.25vw,24px)]">
+          <img
+            src="/achievement-badges-icon.png"
+            alt="Achievement Badges"
+            className="w-[clamp(18px,1.25vw,24px)] h-[clamp(18px,1.25vw,24px)]"
+          />
+          <h3 className="font-arimo font-bold text-[#101828]" style={{ fontSize: 'clamp(16px,1.04vw,20px)', lineHeight: '1.2' }}>
+            Achievement Badges
+          </h3>
+        </div>
         <div className="flex justify-between items-start gap-[clamp(8px,0.52vw,12px)]">
           <div className="flex-1 flex flex-col items-center gap-[clamp(6px,0.42vw,8px)]">
             <div 
@@ -264,18 +271,19 @@ const PerformanceStatsWidget = () => {
 
       {/* Smart Revision Tools */}
       <div
-        className="rounded-[clamp(16px,1.04vw,20px)] border"
+        className="rounded-[clamp(16px,1.04vw,20px)]"
         style={{
-          borderWidth: '0.8px',
-          borderColor: '#E5E7EB',
           background: '#FFFFFF',
           padding: 'clamp(20px,1.29vw,24.8px) clamp(20px,1.25vw,24px)',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.04), 0 3px 10px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04)',
         }}
       >
         <div className="flex items-center gap-[clamp(6px,0.42vw,8px)] mb-[clamp(16px,1.04vw,20px)]">
-          <svg className="w-[clamp(20px,1.3vw,25px)] h-[clamp(20px,1.61vw,31px)]" viewBox="0 0 25 31" fill="none">
-            <path d="M13 2L3 14h8l-1 8 10-12h-8l1-8z" fill="#FF8C00"/>
-          </svg>
+          <img
+            src="/smart-revision-icon.png"
+            alt="Smart Revision Tools"
+            className="w-[clamp(18px,1.25vw,24px)] h-[clamp(18px,1.25vw,24px)]"
+          />
           <h3 className="font-arimo font-bold text-[#101828]" style={{ fontSize: 'clamp(16px,1.04vw,20px)', lineHeight: '1.4' }}>
             Smart Revision Tools
           </h3>
@@ -342,17 +350,23 @@ const PerformanceStatsWidget = () => {
 
       {/* Quick Settings */}
       <div
-        className="rounded-[clamp(16px,1.04vw,20px)] border"
+        className="rounded-[clamp(16px,1.04vw,20px)]"
         style={{
-          borderWidth: '0.8px',
-          borderColor: '#E5E7EB',
           background: '#FFFFFF',
           padding: 'clamp(20px,1.29vw,24.8px) clamp(20px,1.25vw,24px)',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.04), 0 3px 10px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.04)',
         }}
       >
-        <h3 className="font-arimo font-bold text-[#101828] mb-[clamp(16px,1.04vw,20px)]" style={{ fontSize: 'clamp(16px,1.04vw,20px)', lineHeight: '1.2' }}>
-          Quick Settings
-        </h3>
+        <div className="flex items-center gap-[clamp(6px,0.42vw,8px)] mb-[clamp(16px,1.04vw,20px)]">
+          <img
+            src="/quick-settings-icon.png"
+            alt="Quick Settings"
+            className="w-[clamp(18px,1.25vw,24px)] h-[clamp(18px,1.25vw,24px)]"
+          />
+          <h3 className="font-arimo font-bold text-[#101828]" style={{ fontSize: 'clamp(16px,1.04vw,20px)', lineHeight: '1.2' }}>
+            Quick Settings
+          </h3>
+        </div>
         <div className="grid grid-cols-3 gap-[clamp(12px,0.83vw,16px)]">
           <button className="flex flex-col items-center gap-[clamp(6px,0.42vw,8px)]">
             <div 
@@ -443,7 +457,7 @@ const PerformanceStatsWidget = () => {
                 <path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94L14.4 2.81c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
               </svg>
             </div>
-            <p className="font-arimo text-[#364153] text-center" style={{ fontSize: 'clamp(10px,0.63vw,12px)', lineHeight: '1.25' }}>AI Settings</p>
+            <p className="font-arimo text-[#364153] text-center" style={{ fontSize: 'clamp(10px,0.63vw,12px)', lineHeight: '1.25' }}>All Settings</p>
           </button>
         </div>
       </div>
@@ -454,6 +468,7 @@ const PerformanceStatsWidget = () => {
         style={{
           background: 'linear-gradient(179.87deg, #0E182D 0.11%, #17223E 97.85%)',
           padding: 'clamp(20px,1.46vw,28px) clamp(20px,1.25vw,24px)',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.04), 0 3px 10px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06)',
         }}
       >
         <div className="flex items-center gap-[clamp(6px,0.42vw,8px)] mb-[clamp(12px,0.83vw,16px)]">
